@@ -1,2 +1,5 @@
 #OSX_CRAP
 .DS_Store
+
+#SCSS
+.sass-cache/
