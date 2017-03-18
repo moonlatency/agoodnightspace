@@ -3,3 +3,6 @@
 
 #SCSS
 .sass-cache/
+
+#NODE
+node_modules/
