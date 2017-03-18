@@ -1,8 +1,3 @@
-#OSX_CRAP
 .DS_Store
-
-#SCSS
-.sass-cache/
-
-#NODE
 node_modules/
+.sass-cache/
