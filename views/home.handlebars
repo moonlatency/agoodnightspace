@@ -4,17 +4,23 @@
             <h2>Our Beds Available</h2>
             <i class="fa fa-bed" aria-hidden="true"></i>
             <div class='controller-row'>
-                <button v-on:click='decrement' class="mdl-button mdl-js-button  mdl-button--fab mdl-button--colored">
+                <button 
+                    v-on:click='decrement' 
+                    :disabled="beds_available == 0 ? true : false"
+                    class="mdl-button mdl-js-button  mdl-button--fab mdl-button--colored">
                     <i class="fa fa-minus" aria-hidden="true"></i>
                 </button>
                 <span class='bed-count'>\{{ beds_available }}</span>
-                <button v-on:click='increment' class="mdl-button mdl-js-button  mdl-button--fab mdl-button--colored">
+                <button 
+                    id='bed-increment' 
+                    v-on:click='increment' 
+                    class="mdl-button mdl-js-button  mdl-button--fab mdl-button--colored">
                   <i class="fa fa-plus" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
          <div class='fa' id='my-shelter-info'>
-            <h2>My Shelter Info</h2>
+            <h2>This Shelter</h2>
             <div class='msi-wrapper'>
                 <div class='size'><label class='bold'>Name: </label><span>\{{ name }}</span></div>
                 <div class='size'><label class='bold'>Address: </label><span>\{{ address }}</span></div>
@@ -29,8 +35,8 @@
         </div>
     </div>
     <div id='search'>
+        <h2>Nearby Shelters</h2>
         <div id='filters'>
-        
             <div class='col'>
                 <label class="mdl-switch mdl-js-switch " for="filter-open">
                   <input type="checkbox" v-on:click="runFilters" id="filter-open" value="open" v-model="checkedFilters" class="mdl-switch__input">

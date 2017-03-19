@@ -6,9 +6,9 @@
     border-bottom:1px solid black;
     justify-content: center;
     align-items:center;
-    border-bottom:1px solid black;
 
     h2 {
+        margin-bottom: 72px;
         color: $font-secondary;
     }
 
@@ -21,9 +21,6 @@
         display: flex;
         width: 50%;
         align-items: center;
-
-        button {
-        }
 
         .bed-count {
             font-size:3em;
