@@ -10,8 +10,12 @@
   #beds-controller .fa-bed {
     font-size: 12em;
     color: #4682b4; }
-  #beds-controller .bed-count {
-    font-size: 3em; }
+  #beds-controller .controller-row {
+    display: flex;
+    width: 50%;
+    align-items: center; }
+    #beds-controller .controller-row .bed-count {
+      font-size: 3em; }
 
 .wrapper {
   display: flex;

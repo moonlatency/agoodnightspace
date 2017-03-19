@@ -13,7 +13,19 @@
         color: $font-primary;
     }
 
-    .bed-count {
-        font-size:3em;
+    .controller-row {
+
+        display: flex;
+        width: 50%;
+        align-items: center;
+
+        button {
+        }
+
+        .bed-count {
+            font-size:3em;
+        }
+
     }
+
 }
