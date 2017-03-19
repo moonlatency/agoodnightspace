@@ -7,17 +7,14 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/register', function(req, res, next) {
-  //res.render('wtf');
-  res.send('register');
+  res.render('register');
 });
 
 router.get('/home', function(req, res, next) {
-  //res.render('wtf');
-  res.send('home');
+  res.render('home');
 });
 
 router.get('/search', function(req, res, next) {
-  //res.render('wtf');
-  res.send('search');
+  res.render('search');
 });
 module.exports = router;
