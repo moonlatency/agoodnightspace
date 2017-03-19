@@ -1,13 +1,15 @@
 <div class='wrapper'>
     <div class='my-shelter'>
-        <div class='beds-controller'>
-            <button>-</button><span>35</span><button>+</button>
+        <div id='beds-controller'>
+            <button v-on:click="decrement">-</button>
+            <span>\{{ beds_available }}</span>
+            <button v-on:click="increment">+</button>
         </div>
-        <div class='my-info'>
+        <div id='my-info'>
         </div>
     </div>
     <div class='search'>
-        <div class='filters'>
+        <div id='filters'>
         </div>
     </div>
 </div>
