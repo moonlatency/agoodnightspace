@@ -23,6 +23,7 @@ h2 {
 #results-display {
     display:flex;
     flex-direction:column;
+    overflow-y: scroll;
 
     .shelter-result {
         display: flex;
