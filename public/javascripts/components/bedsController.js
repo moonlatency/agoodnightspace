@@ -6,7 +6,7 @@ let bedsController = new Vue({
     methods: {
         increment: function () {
             this.beds_available++;
-            $('.fa-bed').css('color', '#4682b4');
+            $('.fa-bed').css('color', '#330033');
         },
         decrement: function () {
             this.beds_available = (--this.beds_available < 0) ? 0 : this.beds_available;

@@ -3,7 +3,7 @@
     height:50%;
     display:flex;
     flex-direction:column;
-    border-bottom:3px solid $font-primary;
+    border-bottom:5px solid #330033;
     justify-content: center;
     align-items:center;
 
@@ -13,8 +13,8 @@
     }
 
     .fa-bed {
-        font-size:12em;
-        color: $font-primary;
+        font-size:6em;
+        color: #330033;
     }
 
     .controller-row {
