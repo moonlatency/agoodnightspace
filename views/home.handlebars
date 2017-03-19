@@ -1,0 +1,32 @@
+<div class='wrapper'>
+    <div class='my-shelter'>
+        <div id='beds-controller'>
+            <h2>Our Beds Available</h2>
+            <i class="fa fa-bed" aria-hidden="true"></i>
+            <div class='controller-row'>
+                <button v-on:click='decrement' class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored">
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                </button>
+                <span class='bed-count'>\{{ beds_available }}</span>
+                <button v-on:click='increment' class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div id='my-shelter-info'>
+        </div>
+    </div>
+    <div class='search'>
+        <div id='filters'>
+        </div>
+        <div id='results-display'>
+            <shelter-result 
+                v-for="r in results"
+                :key="r.shelter_id"
+                v-bind:name="r.name"
+                v-bind:address="r.address"
+                v-bind:beds_available="r.beds_available">
+            </shelter-result>
+        </div>
+    </div>
+</div>

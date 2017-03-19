@@ -1,0 +1,35 @@
+#results-display {
+    display:flex;
+    flex-direction:column;
+
+    .shelter-result {
+        display: flex;
+        flex-direction:row;
+        justify-content:space-between;
+        width:100%;
+        padding: 12px 0px;
+        border-bottom:1px solid black;
+
+        .left {
+            width:70%;
+
+            .name {
+                font-size:2em;
+                padding-bottom:8px;
+
+            }
+        }
+
+        .right {
+            width:30%;
+            text-align: right;
+
+            .beds-available {
+                font-size:2em;
+                padding-bottom:8px;
+            }
+        }
+
+    }
+
+}
