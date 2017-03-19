@@ -8,6 +8,10 @@
     align-items:center;
     border-bottom:1px solid black;
 
+    h2 {
+        color: $font-secondary;
+    }
+
     .fa-bed {
         font-size:12em;
         color: $font-primary;
