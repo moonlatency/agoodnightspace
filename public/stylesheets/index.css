@@ -19,6 +19,28 @@
     #beds-controller .controller-row .bed-count {
       font-size: 3em; }
 
+#results-display {
+  display: flex;
+  flex-direction: column; }
+  #results-display .shelter-result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 0px;
+    border-bottom: 1px solid black; }
+    #results-display .shelter-result .left {
+      width: 70%; }
+      #results-display .shelter-result .left .name {
+        font-size: 2em;
+        padding-bottom: 8px; }
+    #results-display .shelter-result .right {
+      width: 30%;
+      text-align: right; }
+      #results-display .shelter-result .right .beds-available {
+        font-size: 2em;
+        padding-bottom: 8px; }
+
 .wrapper {
   display: flex;
   position: fixed;

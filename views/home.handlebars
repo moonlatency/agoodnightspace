@@ -24,7 +24,8 @@
                 v-for="r in results"
                 :key="r.shelter_id"
                 v-bind:name="r.name"
-                v-bind:address="r.address">
+                v-bind:address="r.address"
+                v-bind:beds_available="r.beds_available">
             </shelter-result>
         </div>
     </div>
