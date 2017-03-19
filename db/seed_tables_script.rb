@@ -4,7 +4,7 @@ require 'Pry'
 require 'mysql'
 require 'byebug'
 
-connection = Mysql.new 'localhost', 'lindsey', 'pass', 'ags_dev'
+connection = Mysql.new 'localhost', 'ec2-user', '', 'ags_prod'
 
 csv_options = {
   headers: true,
