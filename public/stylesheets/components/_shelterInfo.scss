@@ -1,14 +1,30 @@
 #my-shelter-info {
     display: flex;
-    flex-direction:column;  
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+
+    .msi-wrapper {
+        width:50%;
+    }
 
     h2 {
         color: $font-secondary;
+        text-align: center;
     }
     
-    label {
+    .bold{
+
         font-weight: bold;
-        font-size: 1.3em;
+        font-size: 20px;
         color: $font-secondary;
     }
+
+    .size{
+        font-size: 16px;
+        color: $font-secondary;
+        padding:4px 0;
+    }
+
 }
