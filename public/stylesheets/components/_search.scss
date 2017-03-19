@@ -28,17 +28,18 @@
         border-bottom:1px solid black;
 
         .left {
-            width:70%;
+            float:left;
+            padding-left:40px;
 
             .name {
                 font-size:2em;
                 padding-bottom:8px;
-
             }
         }
 
         .right {
-            width:30%;
+            float:right;
+            padding-right:40px;
             text-align: right;
 
             .beds-available {
