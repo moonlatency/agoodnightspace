@@ -1,0 +1,106 @@
+#beds-controller {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 3px solid #4682b4;
+  justify-content: center;
+  align-items: center; }
+  #beds-controller h2 {
+    margin-bottom: 72px;
+    color: #424242; }
+  #beds-controller .fa-bed {
+    font-size: 12em;
+    color: #4682b4; }
+  #beds-controller .controller-row {
+    display: flex;
+    width: 50%;
+    align-items: center; }
+    #beds-controller .controller-row .bed-count {
+      font-size: 3em; }
+
+#my-shelter-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif; }
+  #my-shelter-info .msi-wrapper {
+    width: 50%; }
+  #my-shelter-info h2 {
+    color: #424242;
+    text-align: center; }
+  #my-shelter-info .bold {
+    font-weight: bold;
+    font-size: 20px;
+    color: #424242; }
+  #my-shelter-info .size {
+    font-size: 16px;
+    color: #424242;
+    padding: 4px 0; }
+
+h2 {
+  text-align: center;
+  color: #424242; }
+
+#filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 0px; }
+  #filters .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    #filters .col .label {
+      display: block; }
+
+#results-display {
+  display: flex;
+  flex-direction: column; }
+  #results-display .shelter-result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 0px;
+    border-bottom: 1px solid black; }
+    #results-display .shelter-result .left {
+      float: left;
+      padding-left: 40px; }
+      #results-display .shelter-result .left .name {
+        font-size: 2em;
+        padding-bottom: 8px; }
+    #results-display .shelter-result .right {
+      float: right;
+      padding-right: 40px;
+      text-align: right; }
+      #results-display .shelter-result .right .beds-available {
+        font-size: 2em;
+        padding-bottom: 8px; }
+
+.wrapper {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white; }
+  .wrapper .my-shelter {
+    width: 50%;
+    height: 100%;
+    border-right: 6px solid #4682b4; }
+    .wrapper .my-shelter #beds-controller {
+      width: 100%;
+      height: 50%; }
+    .wrapper .my-shelter #my-info {
+      width: 100%;
+      height: 50%; }
+  .wrapper #search {
+    width: 50%;
+    height: 100%; }
+    .wrapper #search #filters {
+      width: 100%;
+      height: 15%;
+      border-bottom: 3px solid #4682b4; }
+
+/*# sourceMappingURL=index.css.map */
