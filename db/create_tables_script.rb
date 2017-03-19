@@ -1,7 +1,7 @@
 require 'mysql'
 
 begin
-    connection = Mysql.new 'localhost', 'lindsey', 'pass', 'ags_dev'
+    connection = Mysql.new 'agsmoonlatency.cqwp5aubutwz.us-west-2.rds.amazonaws.com', 'moon_latency', 'sfhacks17'
 
     connection.query(
       "CREATE TABLE gs_shelters (
