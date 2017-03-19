@@ -1,8 +1,5 @@
 require 'csv'
-require 'json'
-require 'Pry'
 require 'mysql'
-require 'byebug'
 
 connection = Mysql.new 'localhost', 'ec2-user', '', 'ags_prod'
 
