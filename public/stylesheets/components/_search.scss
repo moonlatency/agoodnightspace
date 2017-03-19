@@ -1,3 +1,20 @@
+#filters {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:10px 0px;
+
+    .col{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .label {
+            display:block;
+        }
+    }
+}
+
 #results-display {
     display:flex;
     flex-direction:column;

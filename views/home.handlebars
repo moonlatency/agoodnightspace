@@ -4,11 +4,11 @@
             <h2>Our Beds Available</h2>
             <i class="fa fa-bed" aria-hidden="true"></i>
             <div class='controller-row'>
-                <button v-on:click='decrement' class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored">
+                <button v-on:click='decrement' class="mdl-button mdl-js-button  mdl-button--fab mdl-button--colored">
                     <i class="fa fa-minus" aria-hidden="true"></i>
                 </button>
                 <span class='bed-count'>\{{ beds_available }}</span>
-                <button v-on:click='increment' class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored">
+                <button v-on:click='increment' class="mdl-button mdl-js-button  mdl-button--fab mdl-button--colored">
                   <i class="fa fa-plus" aria-hidden="true"></i>
                 </button>
             </div>
@@ -16,12 +16,48 @@
         <div id='my-shelter-info'>
         </div>
     </div>
-    <div class='search'>
+    <div id='search'>
         <div id='filters'>
+        
+            <div class='col'>
+                <label class="mdl-switch mdl-js-switch " for="filter-open">
+                  <input type="checkbox" v-on:click="runFilters" id="filter-open" value="open" v-model="checkedFilters" class="mdl-switch__input">
+                  <span class="mdl-switch__label">Open Now</span>
+                </label>
+
+                <label class="mdl-switch mdl-js-switch " for="filter-beds">
+                  <input type="checkbox" v-on:click="runFilters" id="filter-beds" value="beds" v-model="checkedFilters" class="mdl-switch__input">
+                  <span class="mdl-switch__label">Beds Available</span>
+                </label>
+
+                <label class="mdl-switch mdl-js-switch " for="filter-women">
+                  <input type="checkbox" v-on:click="runFilters" id="filter-women" value="women" v-model="checkedFilters" class="mdl-switch__input">
+                  <span class="mdl-switch__label">Women's Shelter</span>
+                </label>
+            </div>
+
+            <div class='col'>
+                <label class="mdl-switch mdl-js-switch " for="filter-men">
+                  <input type="checkbox" v-on:click="runFilters" id="filter-men" value="men" v-model="checkedFilters" class="mdl-switch__input">
+                  <span class="mdl-switch__label">Men's Shelter</span>
+                </label>
+
+                <label class="mdl-switch mdl-js-switch " for="filter-lgbtq">
+                  <input type="checkbox" v-on:click="runFilters" id="filter-lgbtq" value="lgbtq" v-model="checkedFilters" class="mdl-switch__input">
+                  <span class="mdl-switch__label">LGBTQ Friendly</span>
+                </label>
+
+                <label class="mdl-switch mdl-js-switch " for="filter-showers">
+                  <input type="checkbox" v-on:click="runFilters" id="filter-showers" value="showers" v-model="checkedFilters" class="mdl-switch__input">
+                  <span class="mdl-switch__label">Has Showers</span>
+                </label>
+            </div>
+
+
         </div>
         <div id='results-display'>
             <shelter-result 
-                v-for="r in results"
+                v-for="r in filteredResults"
                 :key="r.shelter_id"
                 v-bind:name="r.name"
                 v-bind:address="r.address"
