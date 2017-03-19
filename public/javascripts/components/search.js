@@ -24,8 +24,6 @@ let search = new Vue({
 { shelter_id: '8', name: 'Sunset Baptist Church', address: '1438 Ulloa St.', beds_available: 0, filters: {women: true, open: true, showers: true} },
 { shelter_id: '9', name: 'Jazzy\'s Place', address: '238 Mission St.', beds_available: 11, filters: {women: false, open: true, showers: true, lgbtq: true} },
 { shelter_id: '10', name: 'Salvation Army', address: '1749 Van Ness St.', beds_available: 183, filters: {women: false, open: true, showers: true, lgbtq: false} }
-
-
 ],
         checkedFilters: []
     },
@@ -84,6 +82,18 @@ let search = new Vue({
     }
 });
 
-/*
+$(document).ready( function () {
+    $.ajax({
+        type: "GET",
+        url: `http://127.0.0.1:3000/api/beds-available`,
+        cache: false,
+        success: function ( shelters ) {
+            shelters = JSON.parse(shelters);
+            search.results = [];
 
-*/
+            for ( let s of shelters ) {
+
+            }
+        }
+    });
+});
