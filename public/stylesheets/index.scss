@@ -1,6 +1,8 @@
 $font-primary: #4682b4;
 $background: white;
 
+@import 'components/bedsController';
+
 .wrapper {
     display:flex;
     position: fixed;
@@ -16,7 +18,6 @@ $background: white;
         #beds-controller {
             width:100%;
             height:50%;
-            border-bottom:1px solid black;
         }
 
         #my-info {

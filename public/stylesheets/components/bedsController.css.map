@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gBAAiB;EACb,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,GAAG;EACV,OAAO,EAAC,IAAI;EACZ,cAAc,EAAC,MAAM;EACrB,aAAa,EAAC,eAAe;EAC7B,eAAe,EAAE,MAAM;EACvB,WAAW,EAAC,MAAM;EAClB,aAAa,EAAC,eAAe;EAE7B,kBAAE;IACE,SAAS,EAAC,IAAI;IACd,KAAK,EAAC,SAAS",
+"sources": ["bedsController.scss"],
+"names": [],
+"file": "bedsController.css"
+}
