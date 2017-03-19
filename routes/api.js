@@ -11,7 +11,8 @@ var connection = mysql.createConnection({
 connection.connect(function(err){});
 
 router.get('/increment-beds-occupied', function (req, res, next) {
-  connection.query("update gs_beds_available set current_capacity = current_capacity + 1 where shelter_id = 1", function(err, results){
+  let sid = req.args.get('sid');
+  connection.query(`update gs_beds_available set current_capacity = current_capacity + 1 where shelter_id = ${sid}`, function(err, results){
     connection.end();
   });
   res.send('Incremented occupied beds')
