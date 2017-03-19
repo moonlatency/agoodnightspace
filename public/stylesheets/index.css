@@ -19,6 +19,18 @@
     #beds-controller .controller-row .bed-count {
       font-size: 3em; }
 
+#filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 0px; }
+  #filters .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    #filters .col .label {
+      display: block; }
+
 #results-display {
   display: flex;
   flex-direction: column; }
@@ -57,10 +69,10 @@
     .wrapper .my-shelter #my-info {
       width: 100%;
       height: 50%; }
-  .wrapper .search {
+  .wrapper #search {
     width: 50%;
     height: 100%; }
-    .wrapper .search #filters {
+    .wrapper #search #filters {
       width: 100%;
       height: 15%;
       border-bottom: 1px solid black; }
